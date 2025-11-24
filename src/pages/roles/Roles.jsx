@@ -1,8 +1,6 @@
 
 
-import React from 'react'
 import RolesTable from './RolesTable'
-import AddRoles from './AddRoles'
 
 export default function Roles() {
   return (

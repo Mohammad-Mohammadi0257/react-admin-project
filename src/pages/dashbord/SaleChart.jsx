@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getThisYearOrdersService } from '../../service/orders'
 import  jMoment  from 'jalali-moment';
 import { setDashbordChart } from './../../utils/dashbordChart';

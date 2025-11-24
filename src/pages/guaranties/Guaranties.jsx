@@ -1,6 +1,3 @@
-
-
-import React from 'react'
 import GuarantieTable from './GuarantieTable'
 
 export default function Guaranties() {

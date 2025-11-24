@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import { useHasPermission } from '../../../hook/permissionsHook'
 
 export default function SidebarGropTitle(props) {

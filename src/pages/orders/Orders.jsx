@@ -1,5 +1,3 @@
-import React from 'react';
-import OrdersDetails from './OrdersDetails';
 import OrderTable from './OrderTable';
 
 const Orders = () => {

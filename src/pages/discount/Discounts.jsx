@@ -1,7 +1,5 @@
 
-import React from 'react'
 import DiscountTable from './DiscountTable'
-import AddDiscount from './AddDiscount'
 
 export default function Discounts() {
   return (

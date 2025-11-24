@@ -1,6 +1,4 @@
 
-import React from 'react'
-
 export default function CommentsTable() {
   return (
     <div>
@@ -20,7 +18,7 @@ export default function CommentsTable() {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>قاسم بساکی</td>
+                    <td> محمد محمدی</td>
                     <td>نظر</td>
                     <td>محصول فلان</td>
                     <td>قسمتی از متن نظر برای این محصول مثلا 100 کارکتر</td>

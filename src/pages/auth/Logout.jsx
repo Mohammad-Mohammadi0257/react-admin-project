@@ -14,7 +14,6 @@ export default function Logout() {
   const res =await logoutService()
         setLoading(true)
         if (res.status==200) {
-        //  console.log(res.data);
         localStorage.removeItem("loginToken")
         setLoading(false)
     }else{
@@ -27,9 +26,9 @@ export default function Logout() {
 
  }
 
- useEffect(()=>{
-handleLogout();
- },[])
+  useEffect(()=>{
+      handleLogout();
+  },[])
 
   return (
     <div>

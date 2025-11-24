@@ -1,4 +1,4 @@
-import React from 'react'
+
 import RightContent from './RightContent'
 import LeftContent from './LeftContent'
 

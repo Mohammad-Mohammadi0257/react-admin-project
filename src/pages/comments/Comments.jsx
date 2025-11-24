@@ -1,6 +1,4 @@
 
-
-import React from 'react'
 import CommentsTable from './CommentsTable'
 import AddComments from './AddComments'
 

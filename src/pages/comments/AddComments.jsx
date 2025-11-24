@@ -1,7 +1,5 @@
 
-import React from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
-import AddBrands from './../brands/AddBrands';
 
 export default function AddComments() {
   return (

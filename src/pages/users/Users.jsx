@@ -1,8 +1,5 @@
 
-
-import React from 'react'
 import UsersTable from './UsersTable'
-import AddUser from './AddUser'
 
 export default function Users() {
   return (

@@ -1,6 +1,6 @@
 
 
-import React, {useEffect, useState } from 'react'
+import {useEffect, useState } from 'react'
 import PaginatedTable from '../../components/PaginatedTable'
 import AddButtonLink from '../../components/form/AddButtonLink'
 import { Outlet } from 'react-router-dom'

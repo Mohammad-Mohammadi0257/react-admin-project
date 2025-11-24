@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PaginatedTable from '../../components/PaginatedTable'
 import { deleteBrandService, getAllBrandsService } from './../../service/brands';
 import AddBrands from './AddBrands';

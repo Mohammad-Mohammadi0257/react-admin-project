@@ -1,6 +1,4 @@
 
-
-import React from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
 
 export default function AddQuestions() {

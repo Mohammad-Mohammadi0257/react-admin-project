@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Card from './Card'
 import SpinnerLoad from '../../components/SpinnerLoad'
 import { getOrdersStatisticsService } from '../../service/orders'
@@ -57,7 +57,7 @@ export default function Cards() {
         setLoading(true)
         if (res.status==200) {
             let newArr=[...cartsInfo]
-            const data=res.data.data
+            const data=res.data.data      
             for (const key in data) {
               const index= newArr.findIndex(c=>c.name==key)
                 newArr[index].currentValue=data[key].today

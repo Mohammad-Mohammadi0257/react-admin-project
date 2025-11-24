@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PaginatedDataTable from '../../components/PaginatedDataTable'
 import { deleteUserService, getAllUsersService } from '../../service/users'
 import Actions from './tableAddition/Actions'
@@ -31,7 +31,7 @@ export default function UsersTable() {
     {
       field: null,
       title: "نقش",
-      elements: (rowData) => <Roles rowData={rowData}/>,
+      elements: (rowData) => <Roles rowData={rowData}/>
     },
     { field: "phone", title: "شماره تلفن" },
     { field: "email", title: "ایمیل" },

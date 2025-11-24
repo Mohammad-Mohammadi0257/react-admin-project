@@ -1,4 +1,4 @@
- import React, { useContext } from 'react'
+ import { useContext } from 'react'
 import { AdminContext } from '../../../context/AdminLayoutContext'
  
  export default function RightContent() {

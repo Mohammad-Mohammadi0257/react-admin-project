@@ -1,7 +1,5 @@
 
-import React from 'react'
 import DeliveryTable from './DeliveryTable'
-import AddDelivery from './AddDelivery'
 
 export default function Delivery() {
   return (

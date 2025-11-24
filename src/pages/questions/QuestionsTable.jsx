@@ -1,7 +1,4 @@
 
-
-import React from 'react'
-
 export default function QuestionsTable() {
   return (
     <div>
@@ -22,7 +19,7 @@ export default function QuestionsTable() {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>قاسم بساکی</td>
+                    <td> محمد محمدی</td>
                     <td>پرسش</td>
                     <td>محصولات</td>
                     <td>قسمتی از متن سوال برای این محصول مثلا 100 کارکتر</td>

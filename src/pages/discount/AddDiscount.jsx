@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom'
 import { Form, Formik } from 'formik'

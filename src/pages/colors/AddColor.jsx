@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
 import { FastField, Form, Formik } from 'formik'
 import FormikControl from '../../components/form/FormikControl';

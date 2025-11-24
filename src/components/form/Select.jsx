@@ -1,6 +1,6 @@
 
 import { ErrorMessage, FastField ,Field} from 'formik'
-import React from 'react'
+
 import FormikError from './FormikError';
 
 export default function Select({options,name,label,className,firstItem,handleChange}) {

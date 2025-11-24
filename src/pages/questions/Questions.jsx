@@ -1,6 +1,4 @@
 
-
-import React from 'react'
 import QuestionsTable from './QuestionsTable'
 import AddQuestions from './AddQuestions'
 

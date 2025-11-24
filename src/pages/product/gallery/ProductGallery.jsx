@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import PrevPageButton from '../../../components/PrevPageButton'
 import { apiPath } from './../../../service/httpService';

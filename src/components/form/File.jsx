@@ -1,5 +1,5 @@
 import { ErrorMessage, FastField } from 'formik';
-import React from 'react';
+;
 import FormikError from './FormikError';
 
 const File = ({ className, name, label , placeholder }) => {

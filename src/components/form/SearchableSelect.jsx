@@ -31,7 +31,6 @@ export default function SearchableSelect({resultType,options,name,label
         e.stopPropagation()
         setSelectItems((oldData) => {
           const newData = oldData.filter((d) => d.id != id);
-
               const selectedIds = newData.map((n) => n.id);
               const nameValue = resultType == "string" ? selectedIds.join("-") : selectedIds
               formik.setFieldValue(name, nameValue);

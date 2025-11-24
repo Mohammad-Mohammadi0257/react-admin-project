@@ -1,6 +1,4 @@
 
-
-import React from 'react'
 import CategoryTable from './CategoryTable'
 import CategoryContextContainer from '../../context/CategoryContext'
 

@@ -1,6 +1,3 @@
-
-
-import React from 'react'
 import PermissionTable from './PermissionTable'
 
 export default function Permissions() {

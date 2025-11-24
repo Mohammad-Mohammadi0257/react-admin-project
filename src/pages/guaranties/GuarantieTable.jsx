@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PaginatedTable from '../../components/PaginatedTable'
 import AddGuarantie from './AddGuarantie';
 import { deleteGuarantieServices, getAllGuarantieServices } from './../../service/guarantie';

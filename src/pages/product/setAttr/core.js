@@ -1,7 +1,7 @@
 
 import { getCategoryAttrService } from '../../../service/categoryAttr';
 import { Alert } from '../../../utils/Alert';
-import { addProductsAttributeService, getOneProductService } from './../../../service/products';
+import { addProductsAttributeService } from './../../../service/products';
 import * as yup from "yup";
 
 

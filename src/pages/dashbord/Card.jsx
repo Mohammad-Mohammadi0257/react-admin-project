@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function Card(props) {
 const{curentValue,title,icon,desc,lastWeekVlalue,lastMouthValue}=props

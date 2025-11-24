@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export default function Avatar(props) {
     const{name,imgSrc}=props

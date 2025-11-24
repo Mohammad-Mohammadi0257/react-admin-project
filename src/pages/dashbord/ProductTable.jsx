@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getFewerProductService, toggleNotificationService } from './../../service/products';
 import { Alert } from '../../utils/Alert';
 import SpinnerLoad from '../../components/SpinnerLoad';

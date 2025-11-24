@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PaginatedDataTable from '../../components/PaginatedDataTable'
 import Actions from './tableAddition/Actions'
 import { deleteProductsService, getProductsService } from '../../service/products'

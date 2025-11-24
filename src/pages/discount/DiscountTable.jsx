@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { deleteDiscountServic, getAllDiscountServic } from './../../service/discounts';
 import PaginatedTable from '../../components/PaginatedTable';
 import { Outlet } from 'react-router-dom';

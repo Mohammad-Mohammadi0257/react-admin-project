@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import CartsTable from './CartsTable'
 
 export default function Carts() {

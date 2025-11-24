@@ -1,6 +1,5 @@
 
 
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Actions({rowData,handleDeleteRole}) {
@@ -24,7 +23,7 @@ export default function Actions({rowData,handleDeleteRole}) {
       ></i>
 
       <i className=' fas fa-times text-danger mx-1 hovweable_text pointer has_tooltip'
-      title='حذف کد تخفیف'
+      title='حذف نقش'
       data-bs-toggle='tooltip'
       data-bs-placement='top'
     onClick={()=>handleDeleteRole(rowData)}

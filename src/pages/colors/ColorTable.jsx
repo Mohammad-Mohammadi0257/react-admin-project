@@ -1,7 +1,7 @@
 
 
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PaginatedTable from '../../components/PaginatedTable'
 import AddColor from './AddColor'
 import { deleteColorsService, getColorsService } from '../../service/color'

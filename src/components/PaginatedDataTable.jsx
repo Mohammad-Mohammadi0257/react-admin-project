@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import SpinnerLoad from './SpinnerLoad';
 
 export default function PaginatedDataTable({

@@ -1,7 +1,5 @@
 
 
-import React from 'react'
-
 export default function AttAction({rowData,editAttribute,setEditAttribute,handleDeleteAttr}) {
   return (
     <div className={`text-center ${editAttribute ? "alert-danger danger_shadow" : ""}`}>

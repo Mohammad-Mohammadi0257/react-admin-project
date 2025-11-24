@@ -1,6 +1,3 @@
-
-
-import React from 'react';
 import { Form, Formik } from 'formik';
 import * as yup from 'yup';
 
@@ -16,7 +13,6 @@ const initialValues ={
     remember: false
 }
 const onSubmit = async (values,submitMethods,navigate)=>{
-    console.log(submitMethods); 
     try {
     const res=await loginService(values)
         if(res.status==200){
@@ -27,7 +23,6 @@ const onSubmit = async (values,submitMethods,navigate)=>{
             console.log(res.status);
             Alert("خطا...",res.data.message,"error")
         }
-        // submitMethods.setSubmitting(false)
         
     } catch (error) {
         submitMethods.setSubmitting(false)
@@ -47,62 +42,62 @@ const Login = () => {
 
     const navigate = useNavigate()
     return (
-                <Formik
-                initialValues={initialValues}
-                onSubmit={(values,submitMethods)=>onSubmit(values,submitMethods,navigate)}
-                validationSchema={validationSchema}
-                >
-                    {
-                        formik=>{
-                            // console.log(formik);
-                            return(                                
-                                <div className="wrap-login100">
-                                    <Form className="login100-form validate-form pos-relative d-flex flex-column align-items-center justify-content-center">
-                                        <span className="login100-form-title">
-                                            ورود اعضا
-                                        </span>
+        <Formik
+        initialValues={initialValues}
+        onSubmit={(values,submitMethods)=>onSubmit(values,submitMethods,navigate)}
+        validationSchema={validationSchema}
+        >
+            {
+                formik=>{
+                    // console.log(formik);
+                    return(                                
+                        <div className="wrap-login100">
+                            <Form className="login100-form validate-form pos-relative d-flex flex-column align-items-center justify-content-center">
+                                <span className="login100-form-title">
+                                    ورود اعضا
+                                </span>
 
-                                        <AuthFormikControl
-                                        formik={formik}
-                                        control="input"
-                                        type="text"
-                                        name="phone"
-                                        icon="fa fa-mobile"
-                                        label="تلفن همراه"
-                                        />
+                                <AuthFormikControl
+                                formik={formik}
+                                control="input"
+                                type="text"
+                                name="phone"
+                                icon="fa fa-mobile"
+                                label="تلفن همراه"
+                                />
 
-                                        <AuthFormikControl
-                                        formik={formik}
-                                        control="input"
-                                        type="password"
-                                        name="password"
-                                        icon="fa fa-lock"
-                                        label="روز عبور "
-                                        />
+                                <AuthFormikControl
+                                formik={formik}
+                                control="input"
+                                type="password"
+                                name="password"
+                                icon="fa fa-lock"
+                                label="روز عبور "
+                                />
 
-                                        <AuthFormikControl
-                                        control="switch"
-                                        name="remember"
-                                        label="مرا بخاطر بسپار   "
-                                        />
+                                <AuthFormikControl
+                                control="switch"
+                                name="remember"
+                                label="مرا بخاطر بسپار   "
+                                />
 
-                                        
-                                                                        
-                                        <div className="container-login100-form-btn">
-                                            <button className="login100-form-btn" disabled={formik.isSubmitting}>
-                                                {formik.isSubmitting ? " لطفا صبر کنید ..." : "ورود"}
-                                            </button>
-                                        </div>
-                                        
-                                    </Form>
-                                    <div className="login100-pic js-tilt" data-tilt>
-                                        <img src="/auth/images/img-01.png" alt="IMG"/>
-                                    </div>
+                                
+                                                                
+                                <div className="container-login100-form-btn">
+                                    <button className="login100-form-btn" disabled={formik.isSubmitting}>
+                                        {formik.isSubmitting ? " لطفا صبر کنید ..." : "ورود"}
+                                    </button>
                                 </div>
-                            )
-                        }
-                    }
-                </Formik>
+                                
+                            </Form>
+                            <div className="login100-pic js-tilt" data-tilt>
+                                <img src="/auth/images/img-01.png" alt="IMG"/>
+                            </div>
+                        </div>
+                    )
+                }
+            }
+        </Formik>
     );
 }
 

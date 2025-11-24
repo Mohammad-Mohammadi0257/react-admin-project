@@ -1,7 +1,7 @@
 
 import Navber from './navbar/Index'
 import Sidebar from './sidebar/Index'
-import AdminContextContainer, { AdminContext } from '../../context/AdminLayoutContext'
+import AdminContextContainer from '../../context/AdminLayoutContext'
 import Content from '../../pages/Content';
 import { Navigate } from 'react-router-dom';
 import { useIsLogin } from '../../hook/authHook';

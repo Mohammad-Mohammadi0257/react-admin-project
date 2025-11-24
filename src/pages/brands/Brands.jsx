@@ -1,8 +1,6 @@
 
-
-import React from 'react'
 import BrandTable from './brandTable'
-import AddBrands from './AddBrands'
+
 
 export default function Brands() {
   return (

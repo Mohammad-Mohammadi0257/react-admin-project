@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
@@ -26,7 +26,7 @@ export default function AddCarts() {
   const [curentProduct ,setCurentProduct]=useState(null)
   const [colors ,setColors]=useState([])
   const [guarantees ,setGuarantees]=useState([])
-  const [selectProductInfo ,setSelectProductsInfo]=useState([])
+  const [selectProductsInfo ,setSelectProductsInfo]=useState([])
   const [reInitialValue ,setReInitialValue]=useState(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -56,7 +56,7 @@ export default function AddCarts() {
     const handleConfirmAddCart=async(formik)=>{
       setIsSubmitting(true);
       let products=[]
-      for (const p of selectProductInfo) {
+      for (const p of selectProductsInfo) {
             products.push({
             product_id:p.product.id,
             color_id:p.color.id || "",
@@ -90,8 +90,6 @@ export default function AddCarts() {
       const res=await getOneCartService(cartToEdit)
       if (res.status==200) {
         const cart=res.data.data
-        console.log(cart);
-        
         setReInitialValue({...initialValues , user_id:cart.user_id})
         let products=[]
         for (const item of cart.items) {
@@ -192,7 +190,7 @@ export default function AddCarts() {
 
                       <div className='row justify-content-center'>
                       {  
-                          selectProductInfo.map(product=>(
+                          selectProductsInfo.map(product=>(
                               <div className="col-12 col-md-6 col-lg-4" key={product.id}>
                                   <div className="input-group my-3 dir_ltr">
                                       <span className="input-group-text text-end font_08 w-100 text_truncate">
@@ -212,12 +210,12 @@ export default function AddCarts() {
                           ))
                       }
                         <div className='col-12'></div>
-                            {selectProductInfo.length > 0 ? (
+                            {selectProductsInfo.length > 0 ? (
                                     <>
                                         <div className="col-6">
                                             <div className="input-group my-3 dir_ltr">
                                                 <span className="input-group-text justify-content-center w-75" >
-                                                  {numberWithCommas(selectProductInfo.map(p=>p.count*p.product.price)
+                                                  {numberWithCommas(selectProductsInfo.map(p=>p.count*p.product.price)
                                                   .reduce((a, b)=>a+b))}</span>
                                                 <span className="input-group-text w-25 text-center"> جمع کل </span>
                                             </div>

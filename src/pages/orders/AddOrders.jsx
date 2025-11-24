@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ModalsContainer from '../../components/ModalsContainer';
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom';
 import { Form, Formik } from 'formik';
@@ -11,7 +11,6 @@ import { getOneOrdersService } from '../../service/orders';
 import { convertDateToJalali } from './../../utils/convertDate';
 import { numberWithCommas } from './../../utils/numbers';
 import SubmitBotton from '../../components/form/SubmitBotton';
-import { Alert } from '../../utils/Alert';
 
 
 const AddOrder = () => {
@@ -44,15 +43,19 @@ const AddOrder = () => {
         if (res.status==200) {
             let products=[] 
             const cart=res.data.data
-           for (const item of cart.items) {
-               products.push({
-                id:item.id,
-                product:item.product,
-                guarantee:item.guarantee,
-                color:item.color,
-                count:item.count
-               }) 
-           }
+        console.log(cart);
+        
+        
+            for (const item of cart.items) {
+                products.push({
+                    id:item.id,
+                    product:item.product,
+                    guarantee:item.guarantee,
+                    color:item.color,
+                    count:item.count
+                }) 
+                
+            }
            setSelectedCartItemsInfo(products)
         }
     }    
@@ -170,7 +173,7 @@ const AddOrder = () => {
                             disabled/>
                         </div>
 
-                      
+                        
                                 <FormikControl
                                 className="col-12 col-md-10 my-1"
                                 control="input"

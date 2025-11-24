@@ -1,10 +1,9 @@
 import * as yup from "yup";
-import { Alert } from "../../utils/Alert";
 
 
 export const onSubmit=async(values,actions,setSelectProductsInfo,curentProduct)=>{
         // console.log(values);
-        // console.log(curentProduct);
+        console.log(curentProduct);
             
         actions.resetForm()
         actions.setFieldValue('user_id' , values.user_id)

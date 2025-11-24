@@ -1,6 +1,6 @@
 
 import { FastField } from 'formik'
-import React from 'react'
+
 
 export default function Switch({name,label}) {
  return (

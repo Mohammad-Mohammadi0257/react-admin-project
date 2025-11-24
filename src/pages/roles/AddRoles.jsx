@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ModalsContainer from '../../components/ModalsContainer'
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom'
 import FormikControl from '../../components/form/FormikControl'
@@ -41,9 +41,8 @@ export default function AddRoles() {
              setRoleToEdit(rol)
             
              editType=="role" ? 
-             setReinitilValue({title:rol.title ,
-              description:rol.description }) :
-               setReinitilValue({permissions_id:rol.permissions.map(p=>""+p.id)
+             setReinitilValue({title:rol.title , description:rol.description }) 
+              : setReinitilValue({permissions_id:rol.permissions.map(p=>""+p.id)
                 ,editPermissions:true
                })
             }
